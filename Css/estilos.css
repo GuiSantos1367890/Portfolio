@@ -663,7 +663,7 @@ html {
 
   /* Configuração do fundo */
   .hero-section {
-    background: url('/images/way_banner.png') no-repeat center center;
+    background: url('images/way_banner.png') no-repeat center center;
     background-size: cover; /* Ajusta a imagem para cobrir toda a área */
     height: 90vh; /* Altura total da viewport */
     width: 100%;
