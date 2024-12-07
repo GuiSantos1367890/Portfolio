@@ -1,5 +1,5 @@
-body{
-    font-family: "Poppins", sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -8,22 +8,22 @@ html {
   scroll-behavior: smooth;
 }
 
-.bg-dark{
-    background-color: #141415 !important;
-    color: white;
-} 
-
-.h2{
-    font-weight: 600;
-    color: #000000;
-    font-style: normal;
+.bg-dark {
+  background-color: #141415 !important;
+  color: white;
 }
 
-.port{
+.h2 {
+  font-weight: 600;
+  color: #000000;
+  font-style: normal;
+}
+
+.port {
   transition: all 0.3s ease !important;
 }
 
-.port:hover{
+.port:hover {
   transform: scale(1.05) !important;
 }
 
@@ -36,98 +36,123 @@ html {
 }
 
 .legenda-port {
-  opacity: 0; /* Invisível */
-  visibility: hidden; /* Evita interação mesmo quando invisível */
-  transform: translateY(10px); /* Move ligeiramente para baixo */
-  transition: all 0.3s ease; /* Suaviza a transição */
+  opacity: 0;
+  /* Invisível */
+  visibility: hidden;
+  /* Evita interação mesmo quando invisível */
+  transform: translateY(10px);
+  /* Move ligeiramente para baixo */
+  transition: all 0.3s ease;
+  /* Suaviza a transição */
 }
 
 /* Exibe ao passar o mouse no <a> */
 .port:hover .legenda-port {
-  opacity: 1; /* Torna visível */
-  visibility: visible; /* Permite interação */
-  transform: translateY(0); /* Move para a posição original */
+  opacity: 1;
+  /* Torna visível */
+  visibility: visible;
+  /* Permite interação */
+  transform: translateY(0);
+  /* Move para a posição original */
 }
 
 /* Contêiner da imagem deve ser relativo */
 .port1 {
   position: relative;
   display: inline-block;
-  overflow: hidden; /* Garante que o texto não ultrapasse a imagem */
+  overflow: hidden;
+  /* Garante que o texto não ultrapasse a imagem */
   border-radius: 0.5rem;
 }
 
 /* Contêiner da imagem */
 .image-container {
-  position: relative; /* Necessário para posicionar o overlay */
-  display: inline-block; /* Faz o tamanho do contêiner se ajustar ao conteúdo */
-  overflow: hidden; /* Impede que o overlay ultrapasse o limite do contêiner */
-  border-radius: 0.5rem; /* Garante bordas arredondadas */
+  position: relative;
+  /* Necessário para posicionar o overlay */
+  display: inline-block;
+  /* Faz o tamanho do contêiner se ajustar ao conteúdo */
+  overflow: hidden;
+  /* Impede que o overlay ultrapasse o limite do contêiner */
+  border-radius: 0.5rem;
+  /* Garante bordas arredondadas */
 }
 
 /* Estilo da imagem */
 .image-container img {
-  width: 100%; /* Faz a imagem ocupar todo o contêiner */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: inherit; /* Herda bordas arredondadas */
-  display: block; /* Remove espaço extra ao redor da imagem */
+  width: 100%;
+  /* Faz a imagem ocupar todo o contêiner */
+  height: auto;
+  /* Mantém a proporção da imagem */
+  border-radius: inherit;
+  /* Herda bordas arredondadas */
+  display: block;
+  /* Remove espaço extra ao redor da imagem */
 }
 
 /* Estilo do overlay */
 .overlay {
-  position: absolute; /* Permite posicionar dentro do contêiner */
+  position: absolute;
+  /* Permite posicionar dentro do contêiner */
   top: 0;
   left: 0;
-  width: 100%; /* Cobre toda a área do contêiner */
+  width: 100%;
+  /* Cobre toda a área do contêiner */
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Fundo semi-transparente */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0; /* Esconde o overlay por padrão */
-  transition: opacity 0.3s ease-in-out; /* Transição suave */
-  border-radius: inherit; /* Respeita bordas arredondadas do contêiner */
+  opacity: 0;
+  /* Esconde o overlay por padrão */
+  transition: opacity 0.3s ease-in-out;
+  /* Transição suave */
+  border-radius: inherit;
+  /* Respeita bordas arredondadas do contêiner */
 }
 
 /* Overlay visível no hover */
 .image-container:hover .overlay {
-  opacity: 1; /* Exibe o overlay */
+  opacity: 1;
+  /* Exibe o overlay */
 }
 
 /* Texto dentro do overlay */
 .overlay p {
   margin: 5px 0;
-  color: white; /* Cor do texto */
-  text-align: center; /* Centraliza o texto */
+  color: white;
+  /* Cor do texto */
+  text-align: center;
+  /* Centraliza o texto */
 }
 
 
 
-.legenda-port{
-    font-weight: 350;
-    color: #000000;
-    font-style: normal;
+.legenda-port {
+  font-weight: 350;
+  color: #000000;
+  font-style: normal;
 }
 
-.display-1{
-    font-weight: 650;
-    text-transform: uppercase;
-    font-style: normal;
+.display-1 {
+  font-weight: 650;
+  text-transform: uppercase;
+  font-style: normal;
 }
 
-.display-3{
+.display-3 {
   font-weight: 650;
   text-transform: uppercase;
   font-style: normal;
 }
 
 
-.display-5{
+.display-5 {
   font-weight: 550;
   font-style: normal;
 }
-  
+
 
 .timeline {
   width: 100%
@@ -144,8 +169,8 @@ html {
 
 @media (max-width: 575.98px) {
   .timeline.timeline-one .timeline-item {
-      width:100%;
-      margin-left: 0
+    width: 100%;
+    margin-left: 0
   }
 }
 
@@ -187,21 +212,24 @@ html {
 
 @media (max-width: 575.98px) {
   .timeline.timeline-one .timeline-item:nth-child(2n+1) {
-      padding-right:0;
-      padding-left: 1.5rem;
-      text-align: left
+    padding-right: 0;
+    padding-left: 1.5rem;
+    text-align: left
   }
 }
 
-.timeline.timeline-one .timeline-item:nth-child(2n+1):after,.timeline.timeline-one .timeline-item:nth-child(2n+1):before {
+.timeline.timeline-one .timeline-item:nth-child(2n+1):after,
+.timeline.timeline-one .timeline-item:nth-child(2n+1):before {
   right: 0;
   left: auto
 }
 
 @media (max-width: 575.98px) {
-  .timeline.timeline-one .timeline-item:nth-child(2n+1):after,.timeline.timeline-one .timeline-item:nth-child(2n+1):before {
-      right:auto;
-      left: 0
+
+  .timeline.timeline-one .timeline-item:nth-child(2n+1):after,
+  .timeline.timeline-one .timeline-item:nth-child(2n+1):before {
+    right: auto;
+    left: 0
   }
 }
 
@@ -229,7 +257,8 @@ html {
   margin-bottom: 1.5rem
 }
 
-.timeline.timeline-two .timeline-item:after,.timeline.timeline-two .timeline-item:before {
+.timeline.timeline-two .timeline-item:after,
+.timeline.timeline-two .timeline-item:before {
   content: "";
   position: absolute;
   top: 0;
@@ -255,7 +284,8 @@ html {
   margin-right: -1.575rem
 }
 
-.timeline.timeline-two .timeline-item .post-meta a,.timeline.timeline-two .timeline-item .post-meta span {
+.timeline.timeline-two .timeline-item .post-meta a,
+.timeline.timeline-two .timeline-item .post-meta span {
   font-size: .875rem;
   padding-right: .125rem
 }
@@ -280,8 +310,8 @@ html {
 
 @media (max-width: 575.98px) {
   .timeline.timeline-four::before {
-      margin:0;
-      left: 0
+    margin: 0;
+    left: 0
   }
 }
 
@@ -315,15 +345,15 @@ html {
 
 @media (max-width: 767.98px) {
   .timeline.timeline-four .timeline-item:nth-child(2n) .timeline-content {
-      padding:.5rem 1.75rem .5rem 0
+    padding: .5rem 1.75rem .5rem 0
   }
 }
 
 @media (max-width: 575.98px) {
   .timeline.timeline-four .timeline-item:nth-child(2n) .timeline-content {
-      width:95%;
-      padding: .5rem 0;
-      text-align: center
+    width: 95%;
+    padding: .5rem 0;
+    text-align: center
   }
 }
 
@@ -343,8 +373,8 @@ html {
 
 @media (max-width: 575.98px) {
   .timeline.timeline-four .icon {
-      margin:auto -7px;
-      top: 3rem
+    margin: auto -7px;
+    top: 3rem
   }
 }
 
@@ -356,8 +386,8 @@ html {
 
 @media (max-width: 575.98px) {
   .timeline.timeline-four .date-content {
-      width:95%;
-      float: right
+    width: 95%;
+    float: right
   }
 }
 
@@ -386,8 +416,8 @@ html {
 
 @media (max-width: 575.98px) {
   .timeline.timeline-four .date-outer::before {
-      width:130px;
-      height: 130px
+    width: 130px;
+    height: 130px
   }
 }
 
@@ -407,8 +437,8 @@ html {
 
 @media (max-width: 575.98px) {
   .timeline.timeline-four .date-outer::after {
-      width:130px;
-      height: 130px
+    width: 130px;
+    height: 130px
   }
 }
 
@@ -422,7 +452,7 @@ html {
 
 @media (max-width: 575.98px) {
   .timeline.timeline-four .date {
-      top:27%
+    top: 27%
   }
 }
 
@@ -444,15 +474,15 @@ html {
 
 @media (max-width: 767.98px) {
   .timeline.timeline-four .timeline-content {
-      padding:.5rem 0 .5rem 1.75rem
+    padding: .5rem 0 .5rem 1.75rem
   }
 }
 
 @media (max-width: 575.98px) {
   .timeline.timeline-four .timeline-content {
-      width:95%;
-      padding: .5rem 0;
-      text-align: center
+    width: 95%;
+    padding: .5rem 0;
+    text-align: center
   }
 }
 
@@ -537,21 +567,21 @@ html {
 
 @media (max-width: 575.98px) {
   .vertical-timeline .row.timeline-inner .right-bottom {
-      top:auto;
-      bottom: calc(50% - 6px);
-      left: calc(50% - 4px)
+    top: auto;
+    bottom: calc(50% - 6px);
+    left: calc(50% - 4px)
   }
 
   .vertical-timeline .row.timeline-inner .top-left {
-      top: auto;
-      bottom: -50%
+    top: auto;
+    bottom: -50%
   }
 }
 
 @media (max-width: 575.98px) {
   .vertical-timeline .row .col-md-6 {
-      text-align:center!important;
-      margin-top: 3rem
+    text-align: center !important;
+    margin-top: 3rem
   }
 }
 
@@ -591,17 +621,17 @@ html {
 
 @media (max-width: 575.98px) {
   .vertical-timeline .row .rectangle {
-      line-height:3;
-      margin-bottom: 2rem
+    line-height: 3;
+    margin-bottom: 2rem
   }
 
   .vertical-timeline .row .right {
-      margin-bottom: 0
+    margin-bottom: 0
   }
 }
 
 .tooltip-inner {
-  box-shadow: 0 .5rem 1rem rgba(23,31,56,.15)
+  box-shadow: 0 .5rem 1rem rgba(23, 31, 56, .15)
 }
 
 .chartist-tooltip {
@@ -636,71 +666,81 @@ html {
   opacity: 1
 }
 
-.ct-area,.ct-line {
+.ct-area,
+.ct-line {
   pointer-events: none
 }
 
 @media (max-width: 476px) {
   .bg-dark {
-    padding: 2rem; /* Reduz o padding para telas menores */
+    padding: 2rem;
+    /* Reduz o padding para telas menores */
   }
 
   h1 {
-    font-size: 2rem; /* Diminui o tamanho do texto */
+    font-size: 2rem;
+    /* Diminui o tamanho do texto */
   }
 
   .timeline-item h5 {
-    font-size: 1rem; /* Ajusta tamanho dos títulos da timeline */
+    font-size: 1rem;
+    /* Ajusta tamanho dos títulos da timeline */
   }
 
   .timeline-item p {
-    font-size: 0.9rem; /* Ajusta tamanho do texto */
+    font-size: 0.9rem;
+    /* Ajusta tamanho do texto */
   }
 }
 
 
 
-  /* Configuração do fundo */
-  .hero-section {
-    background: url('/images/way_banner.jpg') no-repeat center center;
-    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
-    height: 90vh; /* Altura total da viewport */
-    width: 100%;
-    position: relative;
-    color: white; /* Para que o texto contraste com a imagem */
-    overflow: hidden;
-  }
+/* Configuração do fundo */
+.hero-section {
+  background: url('/images/way_banner.jpg') no-repeat center center;
+  background-size: cover;
+  /* Ajusta a imagem para cobrir toda a área */
+  height: 90vh;
+  /* Altura total da viewport */
+  width: 100%;
+  position: relative;
+  color: white;
+  /* Para que o texto contraste com a imagem */
+  overflow: hidden;
+}
 
-  /* Fundo escuro transparente para melhorar a legibilidade do texto */
-  .hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
-    z-index: 1;
+/* Fundo escuro transparente para melhorar a legibilidade do texto */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Ajuste a opacidade conforme necessário */
+  z-index: 1;
 
-  }
+}
 
-  /* Estilos de texto e alinhamento */
-  .hero-content {
-    position: relative;
-    z-index: 2; /* Garante que o texto fique acima do overlay */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100%;
-  }
+/* Estilos de texto e alinhamento */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  /* Garante que o texto fique acima do overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+}
 
 
-  .hero-content button {
-    z-index: 2;
-  }
+.hero-content button {
+  z-index: 2;
+}
 
-  .list-group.borderless .list-group-item {
-    color: inherit;
-    border: 0;
+.list-group.borderless .list-group-item {
+  color: inherit;
+  border: 0;
 }
